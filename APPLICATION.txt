@@ -1,0 +1,9 @@
+GOOGLE FORM TEXT — replace the link after publishing:
+
+Project: AccountMail AI – Account Email Classification. Developed an AI-assisted learning prototype to classify account-management emails into billing, performance, technical issues and campaign setup, and suggest the appropriate team for review. Used JavaScript, natural language processing, bag-of-words features and multinomial Naive Bayes with Laplace smoothing. The interactive browser demo displays category scores and supporting words. Trained on 48 synthetic emails and evaluated on 16 separate synthetic examples; 14 were correctly classified and two referred for manual review. Tools: ChatGPT, JavaScript, HTML/CSS and GitHub Pages. Demo: [PASTE YOUR PUBLISHED LINK].
+
+INTERVIEW EXPLANATION:
+I chose an email-routing problem inspired by account-management work. With ChatGPT's assistance, I developed a small browser prototype. It learns how frequently words occur in each category and uses Naive Bayes to suggest a category for new emails. I used synthetic data, so the test result demonstrates functionality rather than real business accuracy. A larger permissioned dataset and stronger evaluation would be necessary before workplace use.
+
+BEFORE SUBMITTING:
+Open index.html, try each sample and some of your own emails, and read the README so you can explain the model and limitations. This is a new independent prototype, not a claim that your former employer used machine learning.
