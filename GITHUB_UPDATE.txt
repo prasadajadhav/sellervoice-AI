@@ -1,0 +1,16 @@
+UPDATE YOUR EXISTING GITHUB DEMO
+1. Download and extract SellerVoice_AI_Upgrade.zip to a new folder.
+2. Open index.html locally. You should see SellerVoice AI and 24 sample entries.
+3. Open https://github.com/prasadajadhav/account-information-tool
+4. On the Code tab, check the selected branch is main.
+5. Select Add file > Upload files.
+6. Drag ALL extracted FILES into the upload area, not the ZIP and not the containing folder. Keep index.html at the repository root. Existing files with the same names should be replaced.
+7. Enter commit message: Upgrade to SellerVoice AI feedback prioritisation dashboard
+8. Select Commit directly to the main branch, if offered, then Commit changes. If your repository requires a pull request, create and merge it into main.
+9. Open Actions and wait for the latest Pages deployment to show a green check.
+10. Open https://prasadajadhav.github.io/account-information-tool/ and press Ctrl+Shift+R to refresh cached files.
+11. The title should be SellerVoice AI. Your demo link remains the same. No change to Pages settings or custom domain is needed.
+
+If it still shows AccountMail AI, check the latest deployment, confirm index.html was replaced at the root and try a private window. Do not submit the updated form description until the upgraded demo is live.
+
+README.md is already complete. Upload it alongside the code; do not paste the entire README into the Google Form. Use APPLICATION.txt for the form.

@@ -1,261 +1,471 @@
 const TRAINING_DATA = [
   {
-    "label": "Billing",
-    "text": "Please send the invoice for last month payment"
+    "label": "Lead relevance",
+    "text": "Buyer enquiries are irrelevant to my product category"
   },
   {
-    "label": "Billing",
-    "text": "Our invoice amount is incorrect please revise the bill"
+    "label": "Lead relevance",
+    "text": "Leads are from locations outside our delivery area"
   },
   {
-    "label": "Billing",
-    "text": "Payment is overdue please check the outstanding balance"
+    "label": "Lead relevance",
+    "text": "Buyers request tiny quantities below our minimum order"
   },
   {
-    "label": "Billing",
-    "text": "Please share bank details for the payment transfer"
+    "label": "Lead relevance",
+    "text": "I sell industrial pumps but receive enquiries for clothing"
   },
   {
-    "label": "Billing",
-    "text": "We have a billing discrepancy in the monthly invoice"
+    "label": "Lead relevance",
+    "text": "The buyer requirements do not match my catalogue"
   },
   {
-    "label": "Billing",
-    "text": "The refund has not reached our bank account"
+    "label": "Lead relevance",
+    "text": "Too many unrelated leads waste our sales time"
   },
   {
-    "label": "Billing",
-    "text": "Please confirm receipt of payment and clear the balance"
+    "label": "Lead relevance",
+    "text": "Please match enquiries to the products we actually sell"
   },
   {
-    "label": "Billing",
-    "text": "Tax charges on the invoice need correction"
+    "label": "Lead relevance",
+    "text": "The lead location is wrong for my service region"
   },
   {
-    "label": "Billing",
-    "text": "Can you send a credit note for the duplicate charge"
+    "label": "Lead relevance",
+    "text": "Enquiries should include quantity and product specifications"
   },
   {
-    "label": "Billing",
-    "text": "Our finance team needs the invoice and payment receipt"
+    "label": "Lead relevance",
+    "text": "I need relevant buyers interested in bulk orders"
   },
   {
-    "label": "Billing",
-    "text": "The billed amount exceeds the agreed fee"
+    "label": "Lead relevance",
+    "text": "Most enquiries are for a different product category"
   },
   {
-    "label": "Billing",
-    "text": "Please update billing details before sending the invoice"
+    "label": "Lead relevance",
+    "text": "Filter buyer requests by location and minimum quantity"
   },
   {
-    "label": "Performance",
-    "text": "Campaign clicks and conversions have dropped this week"
+    "label": "Buyer responsiveness",
+    "text": "Buyers do not answer calls after sending enquiries"
   },
   {
-    "label": "Performance",
-    "text": "Our click through rate is low please optimize performance"
+    "label": "Buyer responsiveness",
+    "text": "The buyer phone number is unreachable"
   },
   {
-    "label": "Performance",
-    "text": "Cost per acquisition has increased and return on spend fell"
+    "label": "Buyer responsiveness",
+    "text": "I respond to leads but buyers never reply"
   },
   {
-    "label": "Performance",
-    "text": "Please improve conversion rate with better audience targeting"
+    "label": "Buyer responsiveness",
+    "text": "Many buyer contacts have invalid phone numbers"
   },
   {
-    "label": "Performance",
-    "text": "The campaign is underperforming against our conversion goal"
+    "label": "Buyer responsiveness",
+    "text": "Customers stop responding after I send a quotation"
   },
   {
-    "label": "Performance",
-    "text": "We need to optimize bids to reduce cost per click"
+    "label": "Buyer responsiveness",
+    "text": "I cannot contact the buyer because the number is wrong"
   },
   {
-    "label": "Performance",
-    "text": "Traffic increased but conversions remain low"
+    "label": "Buyer responsiveness",
+    "text": "Our quotations receive no response from buyers"
   },
   {
-    "label": "Performance",
-    "text": "Please review the weekly performance report and improve results"
+    "label": "Buyer responsiveness",
+    "text": "Buyers are not answering messages or phone calls"
   },
   {
-    "label": "Performance",
-    "text": "Return on advertising spend is below target"
+    "label": "Buyer responsiveness",
+    "text": "Please verify buyer contact details before sharing leads"
   },
   {
-    "label": "Performance",
-    "text": "The click rate fell after changing creative"
+    "label": "Buyer responsiveness",
+    "text": "Most buyer numbers are switched off when we call"
   },
   {
-    "label": "Performance",
-    "text": "We need more conversions within the existing budget"
+    "label": "Buyer responsiveness",
+    "text": "The buyer disappears after asking for a quote"
   },
   {
-    "label": "Performance",
-    "text": "Analyze campaign results and optimize the audience"
+    "label": "Buyer responsiveness",
+    "text": "I need reminders to follow up unanswered quotations"
   },
   {
-    "label": "Technical",
-    "text": "The tracking pixel is broken and events are missing"
+    "label": "Onboarding & catalogue",
+    "text": "My seller verification is stuck and documents are pending"
   },
   {
-    "label": "Technical",
-    "text": "Our dashboard shows an error when loading reports"
+    "label": "Onboarding & catalogue",
+    "text": "I cannot upload product images to my catalogue"
   },
   {
-    "label": "Technical",
-    "text": "The API integration fails with an authentication error"
+    "label": "Onboarding & catalogue",
+    "text": "The registration process rejects my business documents"
   },
   {
-    "label": "Technical",
-    "text": "The website tag is not firing after deployment"
+    "label": "Onboarding & catalogue",
+    "text": "Adding products to the catalogue is confusing"
   },
   {
-    "label": "Technical",
-    "text": "We cannot login to the dashboard due to a server error"
+    "label": "Onboarding & catalogue",
+    "text": "My company profile approval has been pending for days"
   },
   {
-    "label": "Technical",
-    "text": "Please debug the conversion tracking integration"
+    "label": "Onboarding & catalogue",
+    "text": "I need help completing seller registration and verification"
   },
   {
-    "label": "Technical",
-    "text": "The API returns a timeout and no data"
+    "label": "Onboarding & catalogue",
+    "text": "Product listing upload fails when I add images"
   },
   {
-    "label": "Technical",
-    "text": "An error prevents the report from loading"
+    "label": "Onboarding & catalogue",
+    "text": "The catalogue editor will not save product specifications"
   },
   {
-    "label": "Technical",
-    "text": "The pixel sends duplicate events please fix the bug"
+    "label": "Onboarding & catalogue",
+    "text": "How can I update the business address on my profile"
   },
   {
-    "label": "Technical",
-    "text": "Our tracking script stopped working on the website"
+    "label": "Onboarding & catalogue",
+    "text": "My verification documents were rejected without explanation"
   },
   {
-    "label": "Technical",
-    "text": "The dashboard is unavailable and login fails"
+    "label": "Onboarding & catalogue",
+    "text": "Please simplify adding prices and photos to product listings"
   },
   {
-    "label": "Technical",
-    "text": "Please resolve the broken integration and missing events"
+    "label": "Onboarding & catalogue",
+    "text": "I cannot finish onboarding because approval is delayed"
   },
   {
-    "label": "Campaign setup",
-    "text": "Please launch a new campaign next Monday"
+    "label": "Subscription & billing",
+    "text": "My subscription was renewed without clear notice"
   },
   {
-    "label": "Campaign setup",
-    "text": "Set up a campaign targeting mobile users in Mumbai"
+    "label": "Subscription & billing",
+    "text": "I was charged twice for the paid plan"
   },
   {
-    "label": "Campaign setup",
-    "text": "Upload new creative assets before the launch date"
+    "label": "Subscription & billing",
+    "text": "Please explain the subscription invoice and refund policy"
   },
   {
-    "label": "Campaign setup",
-    "text": "We need to create a campaign with a daily budget"
+    "label": "Subscription & billing",
+    "text": "The paid membership price is unclear"
   },
   {
-    "label": "Campaign setup",
-    "text": "Please schedule the new advertising campaign for tomorrow"
+    "label": "Subscription & billing",
+    "text": "I want to cancel my plan and stop auto renewal"
   },
   {
-    "label": "Campaign setup",
-    "text": "Configure location targeting and upload the banners"
+    "label": "Subscription & billing",
+    "text": "The invoice has an incorrect tax amount"
   },
   {
-    "label": "Campaign setup",
-    "text": "Create a new ad group and set the start date"
+    "label": "Subscription & billing",
+    "text": "My payment failed but money was deducted"
   },
   {
-    "label": "Campaign setup",
-    "text": "Please activate the campaign after the creative approval"
+    "label": "Subscription & billing",
+    "text": "Please refund the duplicate subscription charge"
   },
   {
-    "label": "Campaign setup",
-    "text": "Set up audience targeting for our product launch"
+    "label": "Subscription & billing",
+    "text": "I cannot find the cancellation option for my membership"
   },
   {
-    "label": "Campaign setup",
-    "text": "The new campaign needs banners and budget configuration"
+    "label": "Subscription & billing",
+    "text": "The renewal fee is higher than promised"
   },
   {
-    "label": "Campaign setup",
-    "text": "Please pause the old campaign and launch a new one"
+    "label": "Subscription & billing",
+    "text": "I need a receipt for my membership payment"
   },
   {
-    "label": "Campaign setup",
-    "text": "We need approval for creative assets before activation"
+    "label": "Subscription & billing",
+    "text": "The billing team has not processed my refund"
+  },
+  {
+    "label": "App reliability",
+    "text": "The app crashes whenever I open the inbox"
+  },
+  {
+    "label": "App reliability",
+    "text": "Notifications arrive late and I miss new messages"
+  },
+  {
+    "label": "App reliability",
+    "text": "The application is slow and freezes on my phone"
+  },
+  {
+    "label": "App reliability",
+    "text": "I cannot login because the app shows an error"
+  },
+  {
+    "label": "App reliability",
+    "text": "The inbox fails to load on mobile"
+  },
+  {
+    "label": "App reliability",
+    "text": "Push notifications are not working on my device"
+  },
+  {
+    "label": "App reliability",
+    "text": "The app keeps logging me out during use"
+  },
+  {
+    "label": "App reliability",
+    "text": "Messages do not sync between the app and website"
+  },
+  {
+    "label": "App reliability",
+    "text": "The screen freezes when I open the dashboard"
+  },
+  {
+    "label": "App reliability",
+    "text": "The mobile app crashes after the latest update"
+  },
+  {
+    "label": "App reliability",
+    "text": "Login fails even after resetting my password"
+  },
+  {
+    "label": "App reliability",
+    "text": "The app is unavailable and keeps showing a server error"
   }
 ];
 const TEST_DATA = [
   {
-    "label": "Billing",
-    "text": "Please correct the invoice and refund the extra charge"
+    "label": "Lead relevance",
+    "text": "Enquiries concern products we do not supply"
   },
   {
-    "label": "Billing",
-    "text": "Confirm whether the outstanding payment reached your bank"
+    "label": "Lead relevance",
+    "text": "Filter requests below our minimum order quantity"
   },
   {
-    "label": "Billing",
-    "text": "Finance needs a receipt for the monthly bill"
+    "label": "Lead relevance",
+    "text": "Our delivery region does not match incoming leads"
   },
   {
-    "label": "Billing",
-    "text": "The tax amount on our invoice looks wrong"
+    "label": "Lead relevance",
+    "text": "We get unrelated buyer requirements"
   },
   {
-    "label": "Performance",
-    "text": "Clicks are falling and acquisition costs are rising"
+    "label": "Buyer responsiveness",
+    "text": "The contact number provided for the buyer is invalid"
   },
   {
-    "label": "Performance",
-    "text": "Optimize targeting to improve return on spend"
+    "label": "Buyer responsiveness",
+    "text": "No reply after we send quotations"
   },
   {
-    "label": "Performance",
-    "text": "Review the conversion rate and campaign results"
+    "label": "Buyer responsiveness",
+    "text": "Buyers ignore our calls and messages"
   },
   {
-    "label": "Performance",
-    "text": "Our audience produces low conversions despite high traffic"
+    "label": "Buyer responsiveness",
+    "text": "I need a way to follow up with unreachable buyers"
   },
   {
-    "label": "Technical",
-    "text": "Login returns an error and the dashboard is broken"
+    "label": "Onboarding & catalogue",
+    "text": "Business documents are still awaiting verification"
   },
   {
-    "label": "Technical",
-    "text": "Debug the pixel because events are not firing"
+    "label": "Onboarding & catalogue",
+    "text": "Uploading images to a product listing fails"
   },
   {
-    "label": "Technical",
-    "text": "The API times out during authentication"
+    "label": "Onboarding & catalogue",
+    "text": "Registration is blocked by pending profile approval"
   },
   {
-    "label": "Technical",
-    "text": "Reports fail to load after a script update"
+    "label": "Onboarding & catalogue",
+    "text": "The catalogue editor loses product prices"
   },
   {
-    "label": "Campaign setup",
-    "text": "Launch a new campaign with these banners tomorrow"
+    "label": "Subscription & billing",
+    "text": "Cancel my membership before the next renewal"
   },
   {
-    "label": "Campaign setup",
-    "text": "Set the start date and configure a daily budget"
+    "label": "Subscription & billing",
+    "text": "The plan invoice includes a duplicate charge"
   },
   {
-    "label": "Campaign setup",
-    "text": "Upload creative and activate the new ad group"
+    "label": "Subscription & billing",
+    "text": "My subscription payment needs a refund"
   },
   {
-    "label": "Campaign setup",
-    "text": "Schedule our product launch with mobile targeting"
+    "label": "Subscription & billing",
+    "text": "I need clarification on the membership fee"
+  },
+  {
+    "label": "App reliability",
+    "text": "The inbox screen crashes on mobile"
+  },
+  {
+    "label": "App reliability",
+    "text": "The application freezes after login"
+  },
+  {
+    "label": "App reliability",
+    "text": "Notifications are delayed on my device"
+  },
+  {
+    "label": "App reliability",
+    "text": "My messages fail to sync on the website"
   }
 ];
-if(typeof module!=="undefined") module.exports={TRAINING_DATA,TEST_DATA};
+const SAMPLE_DATA = [
+  {
+    "id": 1,
+    "text": "Buyer enquiries are irrelevant to my product category",
+    "segment": "Manufacturer",
+    "severity": 3
+  },
+  {
+    "id": 2,
+    "text": "Leads are from locations outside our delivery area",
+    "segment": "Wholesaler",
+    "severity": 2
+  },
+  {
+    "id": 3,
+    "text": "Buyers request tiny quantities below our minimum order",
+    "segment": "Service provider",
+    "severity": 2
+  },
+  {
+    "id": 4,
+    "text": "I sell industrial pumps but receive enquiries for clothing",
+    "segment": "Manufacturer",
+    "severity": 1
+  },
+  {
+    "id": 5,
+    "text": "The buyer requirements do not match my catalogue",
+    "segment": "Wholesaler",
+    "severity": 3
+  },
+  {
+    "id": 6,
+    "text": "Too many unrelated leads waste our sales time",
+    "segment": "Service provider",
+    "severity": 2
+  },
+  {
+    "id": 7,
+    "text": "Please match enquiries to the products we actually sell",
+    "segment": "Manufacturer",
+    "severity": 2
+  },
+  {
+    "id": 8,
+    "text": "The lead location is wrong for my service region",
+    "segment": "Wholesaler",
+    "severity": 1
+  },
+  {
+    "id": 9,
+    "text": "Enquiries should include quantity and product specifications",
+    "segment": "Service provider",
+    "severity": 3
+  },
+  {
+    "id": 10,
+    "text": "Buyers do not answer calls after sending enquiries",
+    "segment": "Manufacturer",
+    "severity": 3
+  },
+  {
+    "id": 11,
+    "text": "The buyer phone number is unreachable",
+    "segment": "Wholesaler",
+    "severity": 2
+  },
+  {
+    "id": 12,
+    "text": "I respond to leads but buyers never reply",
+    "segment": "Service provider",
+    "severity": 2
+  },
+  {
+    "id": 13,
+    "text": "Many buyer contacts have invalid phone numbers",
+    "segment": "Manufacturer",
+    "severity": 1
+  },
+  {
+    "id": 14,
+    "text": "Customers stop responding after I send a quotation",
+    "segment": "Wholesaler",
+    "severity": 3
+  },
+  {
+    "id": 15,
+    "text": "I cannot contact the buyer because the number is wrong",
+    "segment": "Service provider",
+    "severity": 2
+  },
+  {
+    "id": 16,
+    "text": "My seller verification is stuck and documents are pending",
+    "segment": "Manufacturer",
+    "severity": 3
+  },
+  {
+    "id": 17,
+    "text": "I cannot upload product images to my catalogue",
+    "segment": "Wholesaler",
+    "severity": 2
+  },
+  {
+    "id": 18,
+    "text": "The registration process rejects my business documents",
+    "segment": "Service provider",
+    "severity": 2
+  },
+  {
+    "id": 19,
+    "text": "Adding products to the catalogue is confusing",
+    "segment": "Manufacturer",
+    "severity": 1
+  },
+  {
+    "id": 20,
+    "text": "My subscription was renewed without clear notice",
+    "segment": "Manufacturer",
+    "severity": 3
+  },
+  {
+    "id": 21,
+    "text": "I was charged twice for the paid plan",
+    "segment": "Wholesaler",
+    "severity": 2
+  },
+  {
+    "id": 22,
+    "text": "Please explain the subscription invoice and refund policy",
+    "segment": "Service provider",
+    "severity": 2
+  },
+  {
+    "id": 23,
+    "text": "The app crashes whenever I open the inbox",
+    "segment": "Manufacturer",
+    "severity": 3
+  },
+  {
+    "id": 24,
+    "text": "Notifications arrive late and I miss new messages",
+    "segment": "Wholesaler",
+    "severity": 2
+  }
+];
+if(typeof module!=="undefined")module.exports={TRAINING_DATA,TEST_DATA,SAMPLE_DATA};

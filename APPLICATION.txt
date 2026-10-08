@@ -1,9 +1,22 @@
-GOOGLE FORM TEXT — replace the link after publishing:
+FORM RESPONSE
+Project: SellerVoice AI – Seller Feedback Prioritisation.
+Developed an AI-assisted prototype for a B2B marketplace product-management workflow. It classifies seller feedback into five issue themes, enables human review and label correction, and prioritises investigation using feedback frequency, severity and estimated effort. The interactive dashboard includes segment filters, batch feedback input, evidence review, editable priorities, experiment hypotheses and CSV export. Technologies: JavaScript, NLP, bag-of-words features, multinomial Naive Bayes with Laplace smoothing, HTML/CSS, ChatGPT-assisted development and GitHub Pages. Uses synthetic data; priority scoring is rule-based and the prototype has not been validated on actual marketplace data.
+Demo: https://prasadajadhav.github.io/account-information-tool/
+Repository: https://github.com/prasadajadhav/account-information-tool
 
-Project: AccountMail AI – Account Email Classification. Developed an AI-assisted learning prototype to classify account-management emails into billing, performance, technical issues and campaign setup, and suggest the appropriate team for review. Used JavaScript, natural language processing, bag-of-words features and multinomial Naive Bayes with Laplace smoothing. The interactive browser demo displays category scores and supporting words. Trained on 48 synthetic emails and evaluated on 16 separate synthetic examples; 14 were correctly classified and two referred for manual review. Tools: ChatGPT, JavaScript, HTML/CSS and GitHub Pages. Demo: [PASTE YOUR PUBLISHED LINK].
+INTERVIEW WALKTHROUGH (TRY THESE YOURSELF)
+1. Explain the user: a PM sorting seller feedback and deciding which problem to investigate.
+2. Click Lead relevance; show the feedback behind the count.
+3. Correct one category and show the counts change.
+4. Raise the leading theme's effort to 10 and explain why its priority changes.
+5. Add unfamiliar feedback and explain manual review and model limitations.
+6. Explain that the ranking formula and proposed experiments are not AI-generated predictions.
 
-INTERVIEW EXPLANATION:
-I chose an email-routing problem inspired by account-management work. With ChatGPT's assistance, I developed a small browser prototype. It learns how frequently words occur in each category and uses Naive Bayes to suggest a category for new emails. I used synthetic data, so the test result demonstrates functionality rather than real business accuracy. A larger permissioned dataset and stronger evaluation would be necessary before workplace use.
+30-SECOND EXPLANATION
+I built SellerVoice AI with AI coding assistance to explore how a marketplace PM could turn seller feedback into product decisions. Naive Bayes groups feedback into themes; a human can correct those labels. An explicit frequency, severity and effort formula supports prioritisation, with evidence and a proposed experiment. The prototype uses synthetic data, so I would validate it with actual users and permissioned feedback before making business claims.
 
-BEFORE SUBMITTING:
-Open index.html, try each sample and some of your own emails, and read the README so you can explain the model and limitations. This is a new independent prototype, not a claim that your former employer used machine learning.
+WHY NAIVE BAYES?
+Small, explainable and fast; runs locally without API costs. It is a baseline and struggles with context, negation and multilingual inputs. A larger dataset, comparison models and independent evaluation are necessary.
+
+WHAT DOES 95% MEAN?
+19 of 20 synthetic test examples were correctly classified; one was referred for review. This tiny synthetic test is not real-world accuracy. Do not present it as a validated business result.
